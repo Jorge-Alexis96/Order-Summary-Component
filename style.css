@@ -25,6 +25,24 @@ main {
   align-items: center;
 }
 
+.main__svg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.main__svg2 {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 .card {
   background-color: #fff;
   width: 450px;
@@ -129,9 +147,14 @@ main {
   color: var(--dark-blue);
 }
 
-
-
 @media(max-width:375px) {
+  .main__svg {
+    display: none;
+  }
+  
+  .main__svg2 {
+    display: block;
+  }
   .card {
     width: 325px;
     padding-bottom: 35px;
